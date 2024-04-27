@@ -1,0 +1,12 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:FlightDateTime" "base:CrewMember" "base:Person" "base:Passenger" "base:TakeOffAt" "base:Pilot" "base:ArrivalAt" "base:Stewardess" ; /*classes style*/
+	"base:ArrivalAt" -> "base:FlightDateTime" [ label = "rdfs:subClassOf" ];
+	"base:CrewMember" -> "base:Person" [ label = "rdfs:subClassOf" ];
+	"base:Stewardess" -> "base:CrewMember" [ label = "rdfs:subClassOf" ];
+	"base:Pilot" -> "base:CrewMember" [ label = "rdfs:subClassOf" ];
+	"base:Passenger" -> "base:Person" [ label = "rdfs:subClassOf" ];
+	"base:TakeOffAt" -> "base:FlightDateTime" [ label = "rdfs:subClassOf" ];
+
+}

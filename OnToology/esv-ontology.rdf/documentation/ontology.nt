@@ -1,0 +1,802 @@
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology> <http://www.w3.org/2000/01/rdf-schema#comment> "An Ontology for flight satisfaction surveys. Made by David Cucalon"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology> <http://www.w3.org/2000/01/rdf-schema#label> "esvOntology"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasADelayOf
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasADelayOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasADelayOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasADelayOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Delay> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasADelayOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Has a delay of"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasADelayOf> <http://www.w3.org/2000/01/rdf-schema#label> "hasADelayOf"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAJobIn
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAJobIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAJobIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Stewardess> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAJobIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airline> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAJobIn> <http://www.w3.org/2000/01/rdf-schema#comment> "has a job in"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAJobIn> <http://www.w3.org/2000/01/rdf-schema#label> "hasAJobIn"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasANumberOfSeats
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasANumberOfSeats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasANumberOfSeats> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Aircraft> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasANumberOfSeats> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Seat> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasANumberOfSeats> <http://www.w3.org/2000/01/rdf-schema#comment> "has a number of seats"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasANumberOfSeats> <http://www.w3.org/2000/01/rdf-schema#label> "hasANumberOfSeats"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirplainsOf
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirplainsOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirplainsOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airline> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirplainsOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Aircraft> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirplainsOf> <http://www.w3.org/2000/01/rdf-schema#comment> "has airplains of"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirplainsOf> <http://www.w3.org/2000/01/rdf-schema#label> "hasAirplainsOf"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAnETA
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAnETA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAnETA> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAnETA> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/ArrivalAt> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAnETA> <http://www.w3.org/2000/01/rdf-schema#comment> "has an estimated time of arrival (ETA)"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAnETA> <http://www.w3.org/2000/01/rdf-schema#label> "hasAnETA"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAnETD
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAnETD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAnETD> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAnETD> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/TakeOffAt> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAnETD> <http://www.w3.org/2000/01/rdf-schema#comment> "has an estimated time of departure (ETD)"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAnETD> <http://www.w3.org/2000/01/rdf-schema#label> "hasAnETD"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasBoughtA
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasBoughtA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasBoughtA> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasBoughtA> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasBoughtA> <http://www.w3.org/2000/01/rdf-schema#comment> "bought a ticket"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasBoughtA> <http://www.w3.org/2000/01/rdf-schema#label> "hasBoughtA"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasWritten
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasWritten> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasWritten> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasWritten> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasWritten> <http://www.w3.org/2000/01/rdf-schema#comment> "has written"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasWritten> <http://www.w3.org/2000/01/rdf-schema#label> "hasWritten"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isAssociatedWith
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isAssociatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Luggage> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#comment> "is associated with"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#label> "isAssociatedWith"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isBuildBy
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isBuildBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isBuildBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Aircraft> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isBuildBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/AircraftManufacturer> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isBuildBy> <http://www.w3.org/2000/01/rdf-schema#comment> "is build by"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isBuildBy> <http://www.w3.org/2000/01/rdf-schema#label> "isBuildBy"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isComingFrom
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isComingFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isComingFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isComingFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airport> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isComingFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "is coming from"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isComingFrom> <http://www.w3.org/2000/01/rdf-schema#label> "isComingFrom"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isFor
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isFor> <http://www.w3.org/2000/01/rdf-schema#comment> "is for"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isFor> <http://www.w3.org/2000/01/rdf-schema#label> "isFor"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isFrom
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/City> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Country> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "is from"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isFrom> <http://www.w3.org/2000/01/rdf-schema#label> "isFrom"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isGoingTo
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isGoingTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isGoingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isGoingTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airport> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isGoingTo> <http://www.w3.org/2000/01/rdf-schema#comment> "is going to"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isGoingTo> <http://www.w3.org/2000/01/rdf-schema#label> "isGoingTo"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isLocatedIn
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isLocatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airport> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/City> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "is located in"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#label> "isLocatedIn"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isRelatedWith
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isRelatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isRelatedWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isRelatedWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isRelatedWith> <http://www.w3.org/2000/01/rdf-schema#comment> "is related with"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isRelatedWith> <http://www.w3.org/2000/01/rdf-schema#label> "isRelatedWith"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isResponsibleOf
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isResponsibleOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isResponsibleOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isResponsibleOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Aircraft> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isResponsibleOf> <http://www.w3.org/2000/01/rdf-schema#comment> "is responsible of"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isResponsibleOf> <http://www.w3.org/2000/01/rdf-schema#label> "isResponsibleOf"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isTakeIn
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isTakeIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isTakeIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isTakeIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Aircraft> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isTakeIn> <http://www.w3.org/2000/01/rdf-schema#comment> "is take in"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isTakeIn> <http://www.w3.org/2000/01/rdf-schema#label> "isTakeIn"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isWorkingIn
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isWorkingIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isWorkingIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Stewardess> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isWorkingIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Aircraft> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isWorkingIn> <http://www.w3.org/2000/01/rdf-schema#comment> "is working in"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isWorkingIn> <http://www.w3.org/2000/01/rdf-schema#label> "isWorkingIn"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/DatePublished
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/DatePublished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/DatePublished> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/DatePublished> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/DatePublished> <http://www.w3.org/2000/01/rdf-schema#comment> "Date when the review was published"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/DatePublished> <http://www.w3.org/2000/01/rdf-schema#label> "DatePublished"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAge
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAge> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Person> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAge> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2001/XMLSchema#minExclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAge> <http://www.w3.org/2000/01/rdf-schema#comment> "Person age"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAge> <http://www.w3.org/2000/01/rdf-schema#label> "hasAge"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAircraftName
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAircraftName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAircraftName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Aircraft> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAircraftName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAircraftName> <http://www.w3.org/2000/01/rdf-schema#comment> "aircraft name"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAircraftName> <http://www.w3.org/2000/01/rdf-schema#label> "hasAircraftName"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirlineName
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirlineName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirlineName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airline> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirlineName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirlineName> <http://www.w3.org/2000/01/rdf-schema#comment> "airline name"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirlineName> <http://www.w3.org/2000/01/rdf-schema#label> "hasAirlineName"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirportName
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirportName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirportName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airport> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirportName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirportName> <http://www.w3.org/2000/01/rdf-schema#comment> "airport name"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirportName> <http://www.w3.org/2000/01/rdf-schema#label> "hasAirportName"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasArrivalTimezone
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasArrivalTimezone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasArrivalTimezone> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/ArrivalAt> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasArrivalTimezone> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasArrivalTimezone> <http://www.w3.org/2000/01/rdf-schema#comment> "arrival time zone"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasArrivalTimezone> <http://www.w3.org/2000/01/rdf-schema#label> "hasArrivalTimezone"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasCityName
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasCityName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasCityName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/City> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasCityName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasCityName> <http://www.w3.org/2000/01/rdf-schema#comment> "city name"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasCityName> <http://www.w3.org/2000/01/rdf-schema#label> "hasCityName"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasComment
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasComment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasComment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasComment> <http://www.w3.org/2000/01/rdf-schema#comment> "The rewiew body or comment"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasComment> <http://www.w3.org/2000/01/rdf-schema#label> "hasComment"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasCountryName
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasCountryName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasCountryName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Country> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasCountryName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasCountryName> <http://www.w3.org/2000/01/rdf-schema#comment> "country name"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasCountryName> <http://www.w3.org/2000/01/rdf-schema#label> "hasCountryName"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasDelayReason
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasDelayReason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasDelayReason> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Delay> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasDelayReason> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasDelayReason> <http://www.w3.org/2000/01/rdf-schema#comment> "The reason of the delay"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasDelayReason> <http://www.w3.org/2000/01/rdf-schema#label> "hasDelayReason"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasFlightDateTime
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasFlightDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasFlightDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/FlightDateTime> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasFlightDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasFlightDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The flight date and time"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasFlightDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "hasFlightDateTime"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasFlightHours
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasFlightHours> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasFlightHours> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/CrewMember> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasFlightHours> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid6 .
+_:genid6 <http://www.w3.org/2001/XMLSchema#minExclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasFlightHours> <http://www.w3.org/2000/01/rdf-schema#comment> "The number of flight hours"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasFlightHours> <http://www.w3.org/2000/01/rdf-schema#label> "hasFlightHours"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasIATACode
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasIATACode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasIATACode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airline> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasIATACode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasIATACode> <http://www.w3.org/2000/01/rdf-schema#comment> "The IATA code of the company"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasIATACode> <http://www.w3.org/2000/01/rdf-schema#label> "hasIATACode"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasManufacturerName
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasManufacturerName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasManufacturerName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/AircraftManufacturer> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasManufacturerName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasManufacturerName> <http://www.w3.org/2000/01/rdf-schema#comment> "manufacturer name"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasManufacturerName> <http://www.w3.org/2000/01/rdf-schema#label> "hasManufacturerName"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasNumberOfSeats
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasNumberOfSeats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasNumberOfSeats> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Aircraft> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasNumberOfSeats> <http://www.w3.org/2000/01/rdf-schema#range> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
+_:genid9 <http://www.w3.org/2001/XMLSchema#minExclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasNumberOfSeats> <http://www.w3.org/2000/01/rdf-schema#comment> "the number of the seats"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasNumberOfSeats> <http://www.w3.org/2000/01/rdf-schema#label> "hasNumberOfSeats"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPersonName
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPersonName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPersonName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Person> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPersonName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPersonName> <http://www.w3.org/2000/01/rdf-schema#comment> "Person name"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPersonName> <http://www.w3.org/2000/01/rdf-schema#label> "hasPersonName"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPersonSurname
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPersonSurname> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPersonSurname> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Person> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPersonSurname> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPersonSurname> <http://www.w3.org/2000/01/rdf-schema#comment> "Person surname"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPersonSurname> <http://www.w3.org/2000/01/rdf-schema#label> "hasPersonSurname"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPilotRange
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPilotRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPilotRange> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPilotRange> <http://www.w3.org/2000/01/rdf-schema#range> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#oneOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Officer" .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Captain" .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Cadet" .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPilotRange> <http://www.w3.org/2000/01/rdf-schema#comment> "The pilot range"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPilotRange> <http://www.w3.org/2000/01/rdf-schema#label> "hasPilotRange"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasRating
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasRating> <http://www.w3.org/2000/01/rdf-schema#range> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/2001/XMLSchema#maxInclusive> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid18 <http://www.w3.org/2001/XMLSchema#minExclusive> "0"^^<http://www.w3.org/2001/XMLSchema#int> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasRating> <http://www.w3.org/2000/01/rdf-schema#comment> "The rating of the review"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasRating> <http://www.w3.org/2000/01/rdf-schema#label> "hasRating"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasSeatCode
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasSeatCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasSeatCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Seat> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasSeatCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasSeatCode> <http://www.w3.org/2000/01/rdf-schema#comment> "The code of the seat"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasSeatCode> <http://www.w3.org/2000/01/rdf-schema#label> "hasSeatCode"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTakeOffTimeZone
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTakeOffTimeZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTakeOffTimeZone> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/TakeOffAt> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTakeOffTimeZone> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTakeOffTimeZone> <http://www.w3.org/2000/01/rdf-schema#comment> "The date and time when the flight departure"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTakeOffTimeZone> <http://www.w3.org/2000/01/rdf-schema#label> "hasTakeOffTimeZone"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTicketFee
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTicketFee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTicketFee> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTicketFee> <http://www.w3.org/2000/01/rdf-schema#range> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2001/XMLSchema#minExclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTicketFee> <http://www.w3.org/2000/01/rdf-schema#comment> "The ticket fee"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTicketFee> <http://www.w3.org/2000/01/rdf-schema#label> "hasTicketFee"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTitle
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "The title of the review"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTitle> <http://www.w3.org/2000/01/rdf-schema#label> "hasTitle"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTripCode
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTripCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTripCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTripCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTripCode> <http://www.w3.org/2000/01/rdf-schema#comment> "The trip code"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTripCode> <http://www.w3.org/2000/01/rdf-schema#label> "hasTripCode"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasWeight
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasWeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasWeight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Luggage> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasWeight> <http://www.w3.org/2000/01/rdf-schema#range> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
+_:genid24 <http://www.w3.org/2001/XMLSchema#minExclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasWeight> <http://www.w3.org/2000/01/rdf-schema#comment> "The weight of the luggage"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasWeight> <http://www.w3.org/2000/01/rdf-schema#label> "hasWeight"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isAircraftModel
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isAircraftModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isAircraftModel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Aircraft> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isAircraftModel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isAircraftModel> <http://www.w3.org/2000/01/rdf-schema#comment> "The aircraft model"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isAircraftModel> <http://www.w3.org/2000/01/rdf-schema#label> "isAircraftModel"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isRecommended
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isRecommended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isRecommended> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isRecommended> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isRecommended> <http://www.w3.org/2000/01/rdf-schema#comment> "If the flight is recommended"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isRecommended> <http://www.w3.org/2000/01/rdf-schema#label> "isRecommended"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isSeatType
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isSeatType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isSeatType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Seat> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isSeatType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#oneOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "FirstClass" .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "EconomyClass" .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "BusinessClass" .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isSeatType> <http://www.w3.org/2000/01/rdf-schema#comment> "The seat type"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isSeatType> <http://www.w3.org/2000/01/rdf-schema#label> "isSeatType"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isTypeOfTraveller
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isTypeOfTraveller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isTypeOfTraveller> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isTypeOfTraveller> <http://www.w3.org/2000/01/rdf-schema#range> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#oneOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "SoloLeisure" .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "FamilyLesiure" .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "CoupleLeisure" .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Business" .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isTypeOfTraveller> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of the traveller"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isTypeOfTraveller> <http://www.w3.org/2000/01/rdf-schema#label> "isTypeOfTraveller"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isVerified
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isVerified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isVerified> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isVerified> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isVerified> <http://www.w3.org/2000/01/rdf-schema#comment> "If the flight has been verified or not"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isVerified> <http://www.w3.org/2000/01/rdf-schema#label> "isVerified"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/knowsLanguages
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/knowsLanguages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/knowsLanguages> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Stewardess> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/knowsLanguages> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/knowsLanguages> <http://www.w3.org/2000/01/rdf-schema#comment> "The languages that a stewardess knows"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/knowsLanguages> <http://www.w3.org/2000/01/rdf-schema#label> "knowsLanguages"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/tripPurpose
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/tripPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/tripPurpose> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/tripPurpose> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/tripPurpose> <http://www.w3.org/2000/01/rdf-schema#comment> "The purpose of the trip"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/tripPurpose> <http://www.w3.org/2000/01/rdf-schema#label> "tripPurpose"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Aircraft
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Aircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Aircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "Aircraft"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Aircraft> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Aircraft> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Aircraft"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/AircraftManufacturer
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/AircraftManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/AircraftManufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "Aircraft Manufacturer"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/AircraftManufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "AircraftManufacturer"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airline
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airline> <http://www.w3.org/2000/01/rdf-schema#comment> "Airline"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airline> <http://www.w3.org/2000/01/rdf-schema#label> "Airline"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airport
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airport> <http://www.w3.org/2000/01/rdf-schema#comment> "Airport" .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airport> <http://www.w3.org/2000/01/rdf-schema#label> "Airport"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airport> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Airport"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/ArrivalAt
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/ArrivalAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/ArrivalAt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/FlightDateTime> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/ArrivalAt> <http://www.w3.org/2000/01/rdf-schema#comment> "Arrival time, date and timezone"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/ArrivalAt> <http://www.w3.org/2000/01/rdf-schema#label> "ArrivalAt"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/City
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/City> <http://www.w3.org/2000/01/rdf-schema#comment> "City"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/City> <http://www.w3.org/2000/01/rdf-schema#label> "City"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/City> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/City"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Country
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Country> <http://www.w3.org/2000/01/rdf-schema#comment> "Country"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Country> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Country"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/CrewMember
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/CrewMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/CrewMember> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Person> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/CrewMember> <http://www.w3.org/2000/01/rdf-schema#comment> "Crew members"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/CrewMember> <http://www.w3.org/2000/01/rdf-schema#label> "CrewMember"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Delay
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Delay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Delay> <http://www.w3.org/2000/01/rdf-schema#comment> "Delay"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Delay> <http://www.w3.org/2000/01/rdf-schema#label> "Delay"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/FlightDateTime
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/FlightDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/FlightDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The flights date and time"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/FlightDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "FlightDateTime"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Luggage
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Luggage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Luggage> <http://www.w3.org/2000/01/rdf-schema#comment> "Luggage"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Luggage> <http://www.w3.org/2000/01/rdf-schema#label> "Lugagge"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Person> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Stewardess> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger> <http://www.w3.org/2000/01/rdf-schema#comment> "Passenger"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger> <http://www.w3.org/2000/01/rdf-schema#label> "Passenger"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Person
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Person> <http://www.w3.org/2000/01/rdf-schema#comment> "Person" .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/CrewMember> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Stewardess> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot> <http://www.w3.org/2000/01/rdf-schema#comment> "Pilot"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot> <http://www.w3.org/2000/01/rdf-schema#label> "Pilot"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasComment> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasRating> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTitle> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review> <http://www.w3.org/2000/01/rdf-schema#comment> "Review"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review> <http://www.w3.org/2000/01/rdf-schema#label> "Review"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Seat
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Seat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Seat> <http://www.w3.org/2000/01/rdf-schema#comment> "Seat"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Seat> <http://www.w3.org/2000/01/rdf-schema#label> "Seat"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Stewardess
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Stewardess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Stewardess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/CrewMember> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Stewardess> <http://www.w3.org/2000/01/rdf-schema#comment> "Stewardess"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Stewardess> <http://www.w3.org/2000/01/rdf-schema#label> "Stewardess"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/TakeOffAt
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/TakeOffAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/TakeOffAt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/FlightDateTime> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/TakeOffAt> <http://www.w3.org/2000/01/rdf-schema#comment> "Departure or take off date, time and timezone"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/TakeOffAt> <http://www.w3.org/2000/01/rdf-schema#label> "TakeOffAt"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket> <http://www.w3.org/2000/01/rdf-schema#comment> "Ticket"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket> <http://www.w3.org/2000/01/rdf-schema#label> "Ticket"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip> <http://www.w3.org/2000/01/rdf-schema#comment> "Trip"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip> <http://www.w3.org/2000/01/rdf-schema#label> "Trip"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Barajas
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Barajas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Barajas> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirportName> "Barajas" .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Barajas> <http://www.w3.org/2000/01/rdf-schema#comment> "Barajas Airport"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Barajas> <http://www.w3.org/2000/01/rdf-schema#label> "Barajas"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Barajas> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Airport"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Boeing747
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Boeing747> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Boeing747> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAircraftName> "Boeing 747" .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Boeing747> <http://www.w3.org/2000/01/rdf-schema#comment> "Boeing 747 aircraft"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Boeing747> <http://www.w3.org/2000/01/rdf-schema#label> "Boeing747"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Heathrow
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Heathrow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Heathrow> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirportName> "Heathrow" .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Heathrow> <http://www.w3.org/2000/01/rdf-schema#comment> "Heathrow airport"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Heathrow> <http://www.w3.org/2000/01/rdf-schema#label> "Heathrow"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger1
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger1> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasBoughtA> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket001> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger1> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasWritten> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review001> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger1> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPersonName> "Passenger1" .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger1> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isTypeOfTraveller> "Business" .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger1> <http://www.w3.org/2000/01/rdf-schema#comment> "A simple passenger"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger1> <http://www.w3.org/2000/01/rdf-schema#label> "Passenger1"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot1
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot1> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasFlightHours> "670"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot1> <http://www.w3.org/2000/01/rdf-schema#comment> "A simple pilot"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot1> <http://www.w3.org/2000/01/rdf-schema#label> "Pilot1"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review001
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review001> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isRelatedWith> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket001> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review001> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasComment> "It was a fascinating flight, I enjoyed it" .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review001> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasRating> "8"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review001> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTitle> "Excelent!" .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review001> <http://www.w3.org/2000/01/rdf-schema#comment> "A review"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review001> <http://www.w3.org/2000/01/rdf-schema#label> "Review001"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket001
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket001> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isFor> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip001> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket001> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTicketFee> "1999.89"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket001> <http://www.w3.org/2000/01/rdf-schema#comment> "A ticket"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket001> <http://www.w3.org/2000/01/rdf-schema#label> "Ticket001"@en .
+# 
+# http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip001
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip001> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isComingFrom> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Barajas> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip001> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isGoingTo> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Heathrow> .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip001> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTripCode> "t001" .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip001> <http://www.w3.org/2000/01/rdf-schema#comment> "A trip"@en .
+<http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip001> <http://www.w3.org/2000/01/rdf-schema#label> "Trip001"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#passenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#ticket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#trip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#pilot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#hours> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid37 <http://www.w3.org/2000/01/rdf-schema#comment> "Rule to mark a Review as Verified only when the passenger who has written the review also has bought a ticket associated with a trip" .
+_:genid37 <http://www.w3.org/2000/01/rdf-schema#label> "Rule2" .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid37 <http://www.w3.org/2003/11/swrl#body> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid39 .
+_:genid39 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#review> .
+_:genid39 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#passenger> .
+_:genid39 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasWritten> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid41 .
+_:genid41 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#ticket> .
+_:genid41 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#passenger> .
+_:genid41 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasBoughtA> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid43 .
+_:genid43 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#passenger> .
+_:genid43 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid37 <http://www.w3.org/2003/11/swrl#head> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid45 .
+_:genid45 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid45 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#review> .
+_:genid45 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isVerified> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid46 <http://www.w3.org/2000/01/rdf-schema#comment> "When a business passenger take a trip, the trip is mark as a Business Trip" .
+_:genid46 <http://www.w3.org/2000/01/rdf-schema#label> "Rule3" .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid46 <http://www.w3.org/2003/11/swrl#body> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid48 .
+_:genid48 <http://www.w3.org/2003/11/swrl#argument2> "Business" .
+_:genid48 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#passenger> .
+_:genid48 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isTypeOfTraveller> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid50 .
+_:genid50 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#trip> .
+_:genid50 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#ticket> .
+_:genid50 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isFor> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid52 .
+_:genid52 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#ticket> .
+_:genid52 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#passenger> .
+_:genid52 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasBoughtA> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid54 .
+_:genid54 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#passenger> .
+_:genid54 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid46 <http://www.w3.org/2003/11/swrl#head> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid56 .
+_:genid56 <http://www.w3.org/2003/11/swrl#argument2> "Business Trip" .
+_:genid56 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#trip> .
+_:genid56 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/tripPurpose> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid57 <http://www.w3.org/2000/01/rdf-schema#comment> "Rule to make a Pilot Captain only when has more than 500 hours" .
+_:genid57 <http://www.w3.org/2000/01/rdf-schema#label> "Rule1" .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid57 <http://www.w3.org/2003/11/swrl#body> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid59 .
+_:genid59 <http://www.w3.org/2003/11/swrl#arguments> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "500"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#hours> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid59 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+<http://www.w3.org/2003/11/swrlb#greaterThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid63 .
+_:genid63 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#hours> .
+_:genid63 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#pilot> .
+_:genid63 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasFlightHours> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid65 .
+_:genid65 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#pilot> .
+_:genid65 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid57 <http://www.w3.org/2003/11/swrl#head> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid67 .
+_:genid67 <http://www.w3.org/2003/11/swrl#argument2> "Captain" .
+_:genid67 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#pilot> .
+_:genid67 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPilotRange> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
