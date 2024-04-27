@@ -1,0 +1,1308 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/"
+     xml:base="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology">
+        <rdfs:comment xml:lang="en">An Ontology for flight satisfaction surveys. Made by David Cucalon</rdfs:comment>
+        <rdfs:label xml:lang="en">esvOntology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasADelayOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasADelayOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Delay"/>
+        <rdfs:comment xml:lang="en">Has a delay of</rdfs:comment>
+        <rdfs:label xml:lang="en">hasADelayOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAJobIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAJobIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Stewardess"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airline"/>
+        <rdfs:comment xml:lang="en">has a job in</rdfs:comment>
+        <rdfs:label xml:lang="en">hasAJobIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasANumberOfSeats -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasANumberOfSeats">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Aircraft"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Seat"/>
+        <rdfs:comment xml:lang="en">has a number of seats</rdfs:comment>
+        <rdfs:label xml:lang="en">hasANumberOfSeats</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirplainsOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirplainsOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airline"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Aircraft"/>
+        <rdfs:comment xml:lang="en">has airplains of</rdfs:comment>
+        <rdfs:label xml:lang="en">hasAirplainsOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAnETA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAnETA">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/ArrivalAt"/>
+        <rdfs:comment xml:lang="en">has an estimated time of arrival (ETA)</rdfs:comment>
+        <rdfs:label xml:lang="en">hasAnETA</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAnETD -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAnETD">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/TakeOffAt"/>
+        <rdfs:comment xml:lang="en">has an estimated time of departure (ETD)</rdfs:comment>
+        <rdfs:label xml:lang="en">hasAnETD</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasBoughtA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasBoughtA">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket"/>
+        <rdfs:comment xml:lang="en">bought a ticket</rdfs:comment>
+        <rdfs:label xml:lang="en">hasBoughtA</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasWritten -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasWritten">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review"/>
+        <rdfs:comment xml:lang="en">has written</rdfs:comment>
+        <rdfs:label xml:lang="en">hasWritten</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isAssociatedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isAssociatedWith">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Luggage"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket"/>
+        <rdfs:comment xml:lang="en">is associated with</rdfs:comment>
+        <rdfs:label xml:lang="en">isAssociatedWith</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isBuildBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isBuildBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Aircraft"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/AircraftManufacturer"/>
+        <rdfs:comment xml:lang="en">is build by</rdfs:comment>
+        <rdfs:label xml:lang="en">isBuildBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isComingFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isComingFrom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airport"/>
+        <rdfs:comment xml:lang="en">is coming from</rdfs:comment>
+        <rdfs:label xml:lang="en">isComingFrom</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip"/>
+        <rdfs:comment xml:lang="en">is for</rdfs:comment>
+        <rdfs:label xml:lang="en">isFor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isFrom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/City"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Country"/>
+        <rdfs:comment xml:lang="en">is from</rdfs:comment>
+        <rdfs:label xml:lang="en">isFrom</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isGoingTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isGoingTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airport"/>
+        <rdfs:comment xml:lang="en">is going to</rdfs:comment>
+        <rdfs:label xml:lang="en">isGoingTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isLocatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isLocatedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airport"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/City"/>
+        <rdfs:comment xml:lang="en">is located in</rdfs:comment>
+        <rdfs:label xml:lang="en">isLocatedIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isRelatedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isRelatedWith">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket"/>
+        <rdfs:comment xml:lang="en">is related with</rdfs:comment>
+        <rdfs:label xml:lang="en">isRelatedWith</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isResponsibleOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isResponsibleOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Aircraft"/>
+        <rdfs:comment xml:lang="en">is responsible of</rdfs:comment>
+        <rdfs:label xml:lang="en">isResponsibleOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isTakeIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isTakeIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Aircraft"/>
+        <rdfs:comment xml:lang="en">is take in</rdfs:comment>
+        <rdfs:label xml:lang="en">isTakeIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isWorkingIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isWorkingIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Stewardess"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Aircraft"/>
+        <rdfs:comment xml:lang="en">is working in</rdfs:comment>
+        <rdfs:label xml:lang="en">isWorkingIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/DatePublished -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/DatePublished">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Date when the review was published</rdfs:comment>
+        <rdfs:label xml:lang="en">DatePublished</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAge">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Person"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minExclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Person age</rdfs:comment>
+        <rdfs:label xml:lang="en">hasAge</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAircraftName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAircraftName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Aircraft"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">aircraft name</rdfs:comment>
+        <rdfs:label xml:lang="en">hasAircraftName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirlineName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirlineName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airline"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">airline name</rdfs:comment>
+        <rdfs:label xml:lang="en">hasAirlineName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirportName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirportName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">airport name</rdfs:comment>
+        <rdfs:label xml:lang="en">hasAirportName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasArrivalTimezone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasArrivalTimezone">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/ArrivalAt"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">arrival time zone</rdfs:comment>
+        <rdfs:label xml:lang="en">hasArrivalTimezone</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasCityName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasCityName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/City"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">city name</rdfs:comment>
+        <rdfs:label xml:lang="en">hasCityName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasComment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasComment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The rewiew body or comment</rdfs:comment>
+        <rdfs:label xml:lang="en">hasComment</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasCountryName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasCountryName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">country name</rdfs:comment>
+        <rdfs:label xml:lang="en">hasCountryName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasDelayReason -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasDelayReason">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Delay"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The reason of the delay</rdfs:comment>
+        <rdfs:label xml:lang="en">hasDelayReason</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasFlightDateTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasFlightDateTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/FlightDateTime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">The flight date and time</rdfs:comment>
+        <rdfs:label xml:lang="en">hasFlightDateTime</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasFlightHours -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasFlightHours">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/CrewMember"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minExclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">The number of flight hours</rdfs:comment>
+        <rdfs:label xml:lang="en">hasFlightHours</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasIATACode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasIATACode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airline"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The IATA code of the company</rdfs:comment>
+        <rdfs:label xml:lang="en">hasIATACode</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasManufacturerName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasManufacturerName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/AircraftManufacturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">manufacturer name</rdfs:comment>
+        <rdfs:label xml:lang="en">hasManufacturerName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasNumberOfSeats -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasNumberOfSeats">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Aircraft"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minExclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">the number of the seats</rdfs:comment>
+        <rdfs:label xml:lang="en">hasNumberOfSeats</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPersonName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPersonName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Person name</rdfs:comment>
+        <rdfs:label xml:lang="en">hasPersonName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPersonSurname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPersonSurname">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Person surname</rdfs:comment>
+        <rdfs:label xml:lang="en">hasPersonSurname</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPilotRange -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPilotRange">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Cadet</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Captain</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Officer</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">The pilot range</rdfs:comment>
+        <rdfs:label xml:lang="en">hasPilotRange</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasRating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasRating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</xsd:minExclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">The rating of the review</rdfs:comment>
+        <rdfs:label xml:lang="en">hasRating</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasSeatCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasSeatCode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Seat"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The code of the seat</rdfs:comment>
+        <rdfs:label xml:lang="en">hasSeatCode</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTakeOffTimeZone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTakeOffTimeZone">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/TakeOffAt"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The date and time when the flight departure</rdfs:comment>
+        <rdfs:label xml:lang="en">hasTakeOffTimeZone</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTicketFee -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTicketFee">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minExclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">The ticket fee</rdfs:comment>
+        <rdfs:label xml:lang="en">hasTicketFee</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTitle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The title of the review</rdfs:comment>
+        <rdfs:label xml:lang="en">hasTitle</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTripCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTripCode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The trip code</rdfs:comment>
+        <rdfs:label xml:lang="en">hasTripCode</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasWeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasWeight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Luggage"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minExclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">The weight of the luggage</rdfs:comment>
+        <rdfs:label xml:lang="en">hasWeight</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isAircraftModel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isAircraftModel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Aircraft"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The aircraft model</rdfs:comment>
+        <rdfs:label xml:lang="en">isAircraftModel</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isRecommended -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isRecommended">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">If the flight is recommended</rdfs:comment>
+        <rdfs:label xml:lang="en">isRecommended</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isSeatType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isSeatType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Seat"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>BusinessClass</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>EconomyClass</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>FirstClass</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">The seat type</rdfs:comment>
+        <rdfs:label xml:lang="en">isSeatType</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isTypeOfTraveller -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isTypeOfTraveller">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Business</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>CoupleLeisure</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>FamilyLesiure</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>SoloLeisure</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">The type of the traveller</rdfs:comment>
+        <rdfs:label xml:lang="en">isTypeOfTraveller</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isVerified -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isVerified">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">If the flight has been verified or not</rdfs:comment>
+        <rdfs:label xml:lang="en">isVerified</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/knowsLanguages -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/knowsLanguages">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Stewardess"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The languages that a stewardess knows</rdfs:comment>
+        <rdfs:label xml:lang="en">knowsLanguages</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/tripPurpose -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/tripPurpose">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The purpose of the trip</rdfs:comment>
+        <rdfs:label xml:lang="en">tripPurpose</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Aircraft -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Aircraft">
+        <rdfs:comment xml:lang="en">Aircraft</rdfs:comment>
+        <rdfs:label xml:lang="en">Aircraft</rdfs:label>
+        <rdfs:sameAs rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Aircraft</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/AircraftManufacturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/AircraftManufacturer">
+        <rdfs:comment xml:lang="en">Aircraft Manufacturer</rdfs:comment>
+        <rdfs:label xml:lang="en">AircraftManufacturer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airline">
+        <rdfs:comment xml:lang="en">Airline</rdfs:comment>
+        <rdfs:label xml:lang="en">Airline</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airport">
+        <rdfs:comment>Airport</rdfs:comment>
+        <rdfs:label xml:lang="en">Airport</rdfs:label>
+        <rdfs:sameAs rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Airport</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/ArrivalAt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/ArrivalAt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/FlightDateTime"/>
+        <rdfs:comment xml:lang="en">Arrival time, date and timezone</rdfs:comment>
+        <rdfs:label xml:lang="en">ArrivalAt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/City">
+        <rdfs:comment xml:lang="en">City</rdfs:comment>
+        <rdfs:label xml:lang="en">City</rdfs:label>
+        <rdfs:sameAs rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/City</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Country">
+        <rdfs:comment xml:lang="en">Country</rdfs:comment>
+        <rdfs:label xml:lang="en">Country</rdfs:label>
+        <rdfs:sameAs rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Country</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/CrewMember -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/CrewMember">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Person"/>
+        <rdfs:comment xml:lang="en">Crew members</rdfs:comment>
+        <rdfs:label xml:lang="en">CrewMember</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Delay -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Delay">
+        <rdfs:comment xml:lang="en">Delay</rdfs:comment>
+        <rdfs:label xml:lang="en">Delay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/FlightDateTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/FlightDateTime">
+        <rdfs:comment xml:lang="en">The flights date and time</rdfs:comment>
+        <rdfs:label xml:lang="en">FlightDateTime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Luggage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Luggage">
+        <rdfs:comment xml:lang="en">Luggage</rdfs:comment>
+        <rdfs:label xml:lang="en">Lugagge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Stewardess"/>
+        <rdfs:comment xml:lang="en">Passenger</rdfs:comment>
+        <rdfs:label xml:lang="en">Passenger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Person">
+        <rdfs:comment>Person</rdfs:comment>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/CrewMember"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Stewardess"/>
+        <rdfs:comment xml:lang="en">Pilot</rdfs:comment>
+        <rdfs:label xml:lang="en">Pilot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasComment"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasRating"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTitle"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Review</rdfs:comment>
+        <rdfs:label xml:lang="en">Review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Seat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Seat">
+        <rdfs:comment xml:lang="en">Seat</rdfs:comment>
+        <rdfs:label xml:lang="en">Seat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Stewardess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Stewardess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/CrewMember"/>
+        <rdfs:comment xml:lang="en">Stewardess</rdfs:comment>
+        <rdfs:label xml:lang="en">Stewardess</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/TakeOffAt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/TakeOffAt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/FlightDateTime"/>
+        <rdfs:comment xml:lang="en">Departure or take off date, time and timezone</rdfs:comment>
+        <rdfs:label xml:lang="en">TakeOffAt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket">
+        <rdfs:comment xml:lang="en">Ticket</rdfs:comment>
+        <rdfs:label xml:lang="en">Ticket</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip">
+        <rdfs:comment xml:lang="en">Trip</rdfs:comment>
+        <rdfs:label xml:lang="en">Trip</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Barajas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Barajas">
+        <hasAirportName>Barajas</hasAirportName>
+        <rdfs:comment xml:lang="en">Barajas Airport</rdfs:comment>
+        <rdfs:label xml:lang="en">Barajas</rdfs:label>
+        <rdfs:sameAs rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Airport</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Boeing747 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Boeing747">
+        <hasAircraftName>Boeing 747</hasAircraftName>
+        <rdfs:comment xml:lang="en">Boeing 747 aircraft</rdfs:comment>
+        <rdfs:label xml:lang="en">Boeing747</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Heathrow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Heathrow">
+        <hasAirportName>Heathrow</hasAirportName>
+        <rdfs:comment xml:lang="en">Heathrow airport</rdfs:comment>
+        <rdfs:label xml:lang="en">Heathrow</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger1">
+        <hasBoughtA rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket001"/>
+        <hasWritten rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review001"/>
+        <hasPersonName>Passenger1</hasPersonName>
+        <isTypeOfTraveller>Business</isTypeOfTraveller>
+        <rdfs:comment xml:lang="en">A simple passenger</rdfs:comment>
+        <rdfs:label xml:lang="en">Passenger1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot"/>
+        <hasFlightHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">670</hasFlightHours>
+        <rdfs:comment xml:lang="en">A simple pilot</rdfs:comment>
+        <rdfs:label xml:lang="en">Pilot1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review001">
+        <isRelatedWith rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket001"/>
+        <hasComment>It was a fascinating flight, I enjoyed it</hasComment>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</hasRating>
+        <hasTitle>Excelent!</hasTitle>
+        <rdfs:comment xml:lang="en">A review</rdfs:comment>
+        <rdfs:label xml:lang="en">Review001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket001">
+        <isFor rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip001"/>
+        <hasTicketFee rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1999.89</hasTicketFee>
+        <rdfs:comment xml:lang="en">A ticket</rdfs:comment>
+        <rdfs:label xml:lang="en">Ticket001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip001">
+        <isComingFrom rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Barajas"/>
+        <isGoingTo rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Heathrow"/>
+        <hasTripCode>t001</hasTripCode>
+        <rdfs:comment xml:lang="en">A trip</rdfs:comment>
+        <rdfs:label xml:lang="en">Trip001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl:var#passenger">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#ticket">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#review">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#trip">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#pilot">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#hours">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment>Rule to mark a Review as Verified only when the passenger who has written the review also has bought a ticket associated with a trip</rdfs:comment>
+        <rdfs:label>Rule2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#passenger"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasBoughtA"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#passenger"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#ticket"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasWritten"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#passenger"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#review"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isVerified"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#review"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment>When a business passenger take a trip, the trip is mark as a Business Trip</rdfs:comment>
+        <rdfs:label>Rule3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#passenger"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasBoughtA"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#passenger"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#ticket"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isFor"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#ticket"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#trip"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isTypeOfTraveller"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#passenger"/>
+                                                <swrl:argument2>Business</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/tripPurpose"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#trip"/>
+                        <swrl:argument2>Business Trip</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment>Rule to make a Pilot Captain only when has more than 500 hours</rdfs:comment>
+        <rdfs:label>Rule1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#pilot"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasFlightHours"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#pilot"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#hours"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#hours"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPilotRange"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#pilot"/>
+                        <swrl:argument2>Captain</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
