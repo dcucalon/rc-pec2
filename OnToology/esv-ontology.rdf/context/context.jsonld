@@ -1,0 +1,271 @@
+{
+  "@context" : {
+    "hasIATACode" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasIATACode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasTitle" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTitle",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasNumberOfSeats" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasNumberOfSeats"
+    },
+    "hasRating" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasRating"
+    },
+    "Review" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review"
+    },
+    "TakeOffAt" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/TakeOffAt"
+    },
+    "hasANumberOfSeats" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasANumberOfSeats",
+      "@type" : "@id"
+    },
+    "Country" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Country"
+    },
+    "isComingFrom" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isComingFrom",
+      "@type" : "@id"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "Stewardess" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Stewardess"
+    },
+    "isRecommended" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isRecommended",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "isFor" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isFor",
+      "@type" : "@id"
+    },
+    "hasDelayReason" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasDelayReason",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasTakeOffTimeZone" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTakeOffTimeZone",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "DatePublished" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/DatePublished",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "isRelatedWith" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isRelatedWith",
+      "@type" : "@id"
+    },
+    "hasAirplainsOf" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirplainsOf",
+      "@type" : "@id"
+    },
+    "hasComment" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasComment",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasAnETD" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAnETD",
+      "@type" : "@id"
+    },
+    "Delay" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Delay"
+    },
+    "hasTicketFee" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTicketFee"
+    },
+    "hasAircraftName" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAircraftName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasCityName" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasCityName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasWritten" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasWritten",
+      "@type" : "@id"
+    },
+    "hasBoughtA" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasBoughtA",
+      "@type" : "@id"
+    },
+    "hasPersonName" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPersonName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Airport" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airport"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Person"
+    },
+    "isTakeIn" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isTakeIn",
+      "@type" : "@id"
+    },
+    "knowsLanguages" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/knowsLanguages",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasManufacturerName" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasManufacturerName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasAge" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAge"
+    },
+    "Ticket" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket"
+    },
+    "Pilot" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot"
+    },
+    "FlightDateTime" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/FlightDateTime"
+    },
+    "isGoingTo" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isGoingTo",
+      "@type" : "@id"
+    },
+    "hasPersonSurname" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPersonSurname",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Passenger" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger"
+    },
+    "isBuildBy" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isBuildBy",
+      "@type" : "@id"
+    },
+    "hasPilotRange" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPilotRange"
+    },
+    "Seat" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Seat"
+    },
+    "isAircraftModel" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isAircraftModel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Luggage" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Luggage"
+    },
+    "isVerified" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isVerified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "hasFlightHours" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasFlightHours"
+    },
+    "Aircraft" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Aircraft"
+    },
+    "isResponsibleOf" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isResponsibleOf",
+      "@type" : "@id"
+    },
+    "isFrom" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isFrom",
+      "@type" : "@id"
+    },
+    "hasCountryName" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasCountryName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isSeatType" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isSeatType"
+    },
+    "tripPurpose" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/tripPurpose",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasTripCode" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTripCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasFlightDateTime" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasFlightDateTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "Airline" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airline"
+    },
+    "isAssociatedWith" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isAssociatedWith",
+      "@type" : "@id"
+    },
+    "hasAnETA" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAnETA",
+      "@type" : "@id"
+    },
+    "hasADelayOf" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasADelayOf",
+      "@type" : "@id"
+    },
+    "City" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/City"
+    },
+    "CrewMember" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/CrewMember"
+    },
+    "ArrivalAt" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/ArrivalAt"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "Trip" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "hasAJobIn" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAJobIn",
+      "@type" : "@id"
+    },
+    "hasSeatCode" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasSeatCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "AircraftManufacturer" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/AircraftManufacturer"
+    },
+    "isWorkingIn" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isWorkingIn",
+      "@type" : "@id"
+    },
+    "isTypeOfTraveller" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isTypeOfTraveller"
+    },
+    "hasAirportName" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirportName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasAirlineName" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirlineName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasArrivalTimezone" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasArrivalTimezone",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasWeight" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasWeight"
+    },
+    "isLocatedIn" : {
+      "@id" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isLocatedIn",
+      "@type" : "@id"
+    }
+  }
+}
