@@ -1,0 +1,1739 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "labels" : {
+      "en" : "esvOntology"
+    },
+    "comments" : {
+      "en" : "An Ontology for flight satisfaction surveys. Made by David Cucalon"
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "3",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Trip",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Trip",
+      "en" : "Trip"
+    },
+    "comment" : {
+      "en" : "Trip"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Person",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person",
+      "en" : "Person"
+    },
+    "subClasses" : [ "8", "9" ],
+    "comment" : {
+      "undefined" : "Person"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "20",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Country",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/page/Country",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Country",
+      "en" : "Country"
+    },
+    "comment" : {
+      "en" : "Country"
+    },
+    "attributes" : [ "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Luggage",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Luggage",
+      "en" : "Lugagge"
+    },
+    "comment" : {
+      "en" : "Luggage"
+    },
+    "attributes" : [ "external" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Seat",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Seat",
+      "en" : "Seat"
+    },
+    "comment" : {
+      "en" : "Seat"
+    },
+    "attributes" : [ "external" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/ArrivalAt",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ArrivalAt",
+      "en" : "ArrivalAt"
+    },
+    "comment" : {
+      "en" : "Arrival time, date and timezone"
+    },
+    "attributes" : [ "external" ],
+    "id" : "32",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Aircraft",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/page/Aircraft",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Aircraft",
+      "en" : "Aircraft"
+    },
+    "comment" : {
+      "en" : "Aircraft"
+    },
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/AircraftManufacturer",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AircraftManufacturer",
+      "en" : "AircraftManufacturer"
+    },
+    "comment" : {
+      "en" : "Aircraft Manufacturer"
+    },
+    "attributes" : [ "external" ],
+    "id" : "72"
+  }, {
+    "instances" : 0,
+    "union" : [ "64", "57" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "77",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Pilot",
+      "en" : "Pilot"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Pilot1",
+      "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+      "comment" : {
+        "en" : "A simple pilot"
+      },
+      "labels" : {
+        "IRI-based" : "Pilot1",
+        "en" : "Pilot1"
+      }
+    } ],
+    "comment" : {
+      "en" : "Pilot"
+    },
+    "attributes" : [ "external" ],
+    "id" : "57",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airline",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Airline",
+      "en" : "Airline"
+    },
+    "comment" : {
+      "en" : "Airline"
+    },
+    "attributes" : [ "external" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Review",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Review",
+      "en" : "Review"
+    },
+    "comment" : {
+      "en" : "Review"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/CrewMember",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CrewMember",
+      "en" : "CrewMember"
+    },
+    "subClasses" : [ "64", "57" ],
+    "comment" : {
+      "en" : "Crew members"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "83",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "58",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "85",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "75",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "87",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Airport",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/page/Airport",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Airport",
+      "en" : "Airport"
+    },
+    "comment" : {
+      "undefined" : "Airport"
+    },
+    "attributes" : [ "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Delay",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Delay",
+      "en" : "Delay"
+    },
+    "comment" : {
+      "en" : "Delay"
+    },
+    "attributes" : [ "external" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/TakeOffAt",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TakeOffAt",
+      "en" : "TakeOffAt"
+    },
+    "comment" : {
+      "en" : "Departure or take off date, time and timezone"
+    },
+    "attributes" : [ "external" ],
+    "id" : "52",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Passenger",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Passenger",
+      "en" : "Passenger"
+    },
+    "comment" : {
+      "en" : "Passenger"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Stewardess",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Stewardess",
+      "en" : "Stewardess"
+    },
+    "comment" : {
+      "en" : "Stewardess"
+    },
+    "attributes" : [ "external" ],
+    "id" : "64",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/Ticket",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Ticket",
+      "en" : "Ticket"
+    },
+    "comment" : {
+      "en" : "Ticket"
+    },
+    "attributes" : [ "external" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "102",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "105",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "108",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/City",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/page/City",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "City",
+      "en" : "City"
+    },
+    "comment" : {
+      "en" : "City"
+    },
+    "attributes" : [ "external" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/FlightDateTime",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FlightDateTime",
+      "en" : "FlightDateTime"
+    },
+    "subClasses" : [ "32", "52" ],
+    "comment" : {
+      "en" : "The flights date and time"
+    },
+    "attributes" : [ "external" ],
+    "id" : "33"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "101",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "103",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "106",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "109",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "112",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "113",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTitle",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasTitle",
+      "en" : "hasTitle"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "The title of the review"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isRecommended",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "isRecommended",
+      "en" : "isRecommended"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "If the flight is recommended"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isTakeIn",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "isTakeIn",
+      "en" : "isTakeIn"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "is take in"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAge",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasAge",
+      "en" : "hasAge"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Person age"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPersonName",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasPersonName",
+      "en" : "hasPersonName"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Person name"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isGoingTo",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "isGoingTo",
+      "en" : "isGoingTo"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "is going to"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTripCode",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasTripCode",
+      "en" : "hasTripCode"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "The trip code"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isVerified",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "isVerified",
+      "en" : "isVerified"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "If the flight has been verified or not"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasWeight",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasWeight",
+      "en" : "hasWeight"
+    },
+    "domain" : "28",
+    "comment" : {
+      "en" : "The weight of the luggage"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isLocatedIn",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "isLocatedIn",
+      "en" : "isLocatedIn"
+    },
+    "domain" : "19",
+    "comment" : {
+      "en" : "is located in"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isTypeOfTraveller",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "isTypeOfTraveller",
+      "en" : "isTypeOfTraveller"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "The type of the traveller"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isAssociatedWith",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "isAssociatedWith",
+      "en" : "isAssociatedWith"
+    },
+    "domain" : "28",
+    "comment" : {
+      "en" : "is associated with"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAnETA",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "hasAnETA",
+      "en" : "hasAnETA"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "has an estimated time of arrival (ETA)"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasFlightHours",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "hasFlightHours",
+      "en" : "hasFlightHours"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "The number of flight hours"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAnETD",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "hasAnETD",
+      "en" : "hasAnETD"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "has an estimated time of departure (ETD)"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPersonSurname",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "hasPersonSurname",
+      "en" : "hasPersonSurname"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Person surname"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasPilotRange",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "hasPilotRange",
+      "en" : "hasPilotRange"
+    },
+    "domain" : "57",
+    "comment" : {
+      "en" : "The pilot range"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/DatePublished",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "DatePublished",
+      "en" : "DatePublished"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Date when the review was published"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirlineName",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "hasAirlineName",
+      "en" : "hasAirlineName"
+    },
+    "domain" : "62",
+    "comment" : {
+      "en" : "airline name"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isWorkingIn",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "isWorkingIn",
+      "en" : "isWorkingIn"
+    },
+    "domain" : "64",
+    "comment" : {
+      "en" : "is working in"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasCountryName",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "hasCountryName",
+      "en" : "hasCountryName"
+    },
+    "domain" : "23",
+    "comment" : {
+      "en" : "country name"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasBoughtA",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "hasBoughtA",
+      "en" : "hasBoughtA"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "bought a ticket"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "66"
+  }, {
+    "range" : "33",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "67"
+  }, {
+    "range" : "33",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "range" : "7",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69"
+  }, {
+    "range" : "7",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "70"
+  }, {
+    "range" : "9",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71"
+  }, {
+    "range" : "9",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/tripPurpose",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "tripPurpose",
+      "en" : "tripPurpose"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "The purpose of the trip"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isFor",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "isFor",
+      "en" : "isFor"
+    },
+    "domain" : "41",
+    "comment" : {
+      "en" : "is for"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasNumberOfSeats",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "hasNumberOfSeats",
+      "en" : "hasNumberOfSeats"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "the number of the seats"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isComingFrom",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "isComingFrom",
+      "en" : "isComingFrom"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "is coming from"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasADelayOf",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "hasADelayOf",
+      "en" : "hasADelayOf"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Has a delay of"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasANumberOfSeats",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "hasANumberOfSeats",
+      "en" : "hasANumberOfSeats"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "has a number of seats"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasArrivalTimezone",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "hasArrivalTimezone",
+      "en" : "hasArrivalTimezone"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "arrival time zone"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirplainsOf",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasAirplainsOf",
+      "en" : "hasAirplainsOf"
+    },
+    "domain" : "62",
+    "comment" : {
+      "en" : "has airplains of"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasComment",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "hasComment",
+      "en" : "hasComment"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "The rewiew body or comment"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasManufacturerName",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "hasManufacturerName",
+      "en" : "hasManufacturerName"
+    },
+    "domain" : "72",
+    "comment" : {
+      "en" : "manufacturer name"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isBuildBy",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "isBuildBy",
+      "en" : "isBuildBy"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "is build by"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasCityName",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "hasCityName",
+      "en" : "hasCityName"
+    },
+    "domain" : "36",
+    "comment" : {
+      "en" : "city name"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isRelatedWith",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "isRelatedWith",
+      "en" : "isRelatedWith"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "is related with"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasIATACode",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "hasIATACode",
+      "en" : "hasIATACode"
+    },
+    "domain" : "62",
+    "comment" : {
+      "en" : "The IATA code of the company"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/knowsLanguages",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "knowsLanguages",
+      "en" : "knowsLanguages"
+    },
+    "domain" : "64",
+    "comment" : {
+      "en" : "The languages that a stewardess knows"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTakeOffTimeZone",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "hasTakeOffTimeZone",
+      "en" : "hasTakeOffTimeZone"
+    },
+    "domain" : "52",
+    "comment" : {
+      "en" : "The date and time when the flight departure"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isSeatType",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "87",
+    "label" : {
+      "IRI-based" : "isSeatType",
+      "en" : "isSeatType"
+    },
+    "domain" : "29",
+    "comment" : {
+      "en" : "The seat type"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTicketFee",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "hasTicketFee",
+      "en" : "hasTicketFee"
+    },
+    "domain" : "41",
+    "comment" : {
+      "en" : "The ticket fee"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasRating",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "83",
+    "label" : {
+      "IRI-based" : "hasRating",
+      "en" : "hasRating"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "The rating of the review"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "99"
+  }, {
+    "range" : "64",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasRating",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "102",
+    "label" : {
+      "IRI-based" : "hasRating",
+      "en" : "hasRating"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "The rating of the review"
+    },
+    "attributes" : [ "allValues", "datatype", "external" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAirportName",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "hasAirportName",
+      "en" : "hasAirportName"
+    },
+    "domain" : "19",
+    "comment" : {
+      "en" : "airport name"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasComment",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "105",
+    "label" : {
+      "IRI-based" : "hasComment",
+      "en" : "hasComment"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "The rewiew body or comment"
+    },
+    "attributes" : [ "allValues", "datatype", "external" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAJobIn",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "hasAJobIn",
+      "en" : "hasAJobIn"
+    },
+    "domain" : "76",
+    "comment" : {
+      "en" : "has a job in"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasTitle",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "108",
+    "label" : {
+      "IRI-based" : "hasTitle",
+      "en" : "hasTitle"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "The title of the review"
+    },
+    "attributes" : [ "allValues", "datatype", "external" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isFrom",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "isFrom",
+      "en" : "isFrom"
+    },
+    "domain" : "36",
+    "comment" : {
+      "en" : "is from"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasWritten",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasWritten",
+      "en" : "hasWritten"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "has written"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "110"
+  }, {
+    "range" : "57",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "111"
+  }, {
+    "range" : "64",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isResponsibleOf",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "isResponsibleOf",
+      "en" : "isResponsibleOf"
+    },
+    "domain" : "57",
+    "comment" : {
+      "en" : "is responsible of"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasDelayReason",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "hasDelayReason",
+      "en" : "hasDelayReason"
+    },
+    "domain" : "82",
+    "comment" : {
+      "en" : "The reason of the delay"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/isAircraftModel",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "isAircraftModel",
+      "en" : "isAircraftModel"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "The aircraft model"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasFlightDateTime",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "hasFlightDateTime",
+      "en" : "hasFlightDateTime"
+    },
+    "domain" : "33",
+    "comment" : {
+      "en" : "The flight date and time"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasAircraftName",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "hasAircraftName",
+      "en" : "hasAircraftName"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "aircraft name"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology/hasSeatCode",
+    "baseIri" : "http://www.semanticweb.org/documoda/ontologies/2024/3/esvOntology",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasSeatCode",
+      "en" : "hasSeatCode"
+    },
+    "domain" : "29",
+    "comment" : {
+      "en" : "The code of the seat"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "118"
+  } ]
+}
