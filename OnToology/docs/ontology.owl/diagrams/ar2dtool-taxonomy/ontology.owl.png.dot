@@ -1,0 +1,12 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "esvOntology:FlightDateTime" "esvOntology:CrewMember" "esvOntology:Person" "esvOntology:Passenger" "esvOntology:TakeOffAt" "esvOntology:Pilot" "esvOntology:ArrivalAt" "esvOntology:Stewardess" ; /*classes style*/
+	"esvOntology:ArrivalAt" -> "esvOntology:FlightDateTime" [ label = "rdfs:subClassOf" ];
+	"esvOntology:CrewMember" -> "esvOntology:Person" [ label = "rdfs:subClassOf" ];
+	"esvOntology:Stewardess" -> "esvOntology:CrewMember" [ label = "rdfs:subClassOf" ];
+	"esvOntology:Pilot" -> "esvOntology:CrewMember" [ label = "rdfs:subClassOf" ];
+	"esvOntology:Passenger" -> "esvOntology:Person" [ label = "rdfs:subClassOf" ];
+	"esvOntology:TakeOffAt" -> "esvOntology:FlightDateTime" [ label = "rdfs:subClassOf" ];
+
+}
